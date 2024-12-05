@@ -91,7 +91,8 @@ storctl cp <source> <destination>
 ```
 Example:
 ```bash
-storctl cp mybucket/file1.txt mybucket-backup/file1.txt
+storctl cp stor://mybucket/file1.txt stor://mybucket-backup/file1.txt
+storctl cp file1.txt stor:///mybucket/file1.txt
 ```
 
 #### Move an object (`mv`)
@@ -100,16 +101,16 @@ storctl mv <source> <destination>
 ```
 Example:
 ```bash
-storctl mv mybucket/file1.txt mybucket-archive/file1.txt
+storctl mv stor://mybucket/file1.txt stor://mybucket-archive/file1.txt
 ```
 
 #### Remove an object (`rm`)
 ```bash
-storctl rm <bucket>/<object>
+storctl rm <bucket> <key>
 ```
 Example:
 ```bash
-storctl rm mybucket/file1.txt
+storctl rm mybucket file1.txt
 ```
 
 #### Configuration Management Commands
@@ -132,7 +133,7 @@ storctl rm mybucket/file1.txt
   ```
 - **Set credentials in a context**:
   ```bash
-  storctl config set-credentials <context-name> --access-key <key> --secret-key <key>
+  storctl config set-credentials <context-name> --api-key <key>
   ```
 - **Use a specific configuration context**:
   ```bash
