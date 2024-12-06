@@ -1,6 +1,6 @@
 # storctl
 
-`storctl` is a command-line tool for managing and interacting with the STOR object store. It provides essential functionality for managing objects and buckets with a simple, intuitive interface.
+`storctl` is a command-line tool for managing and interacting with the [STOR object store](https://github.com/cfichtmueller/stor). It provides essential functionality for managing objects and buckets with a simple, intuitive interface.
 
 ---
 
